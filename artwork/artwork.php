@@ -31,9 +31,9 @@ function artwork_custom_post_type() {
 		'rewrite' => true,
 		'capability_type' => 'post',
 		'has_archive' => true, 
-		'hierarchical' => false,
+		'hierarchical' => true,
 		'menu_position' => 5,
-		'supports' => array('title','author','excerpt','thumbnail','editor')
+		'supports' => array('title','author','excerpt','thumbnail','editor','page-attributes')
 	);
 	
 	register_post_type('artwork',$artwork_args);
